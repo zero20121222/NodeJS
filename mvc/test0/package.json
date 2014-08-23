@@ -1,0 +1,10 @@
+{
+  "name": "test0",
+  "description": "test0 app",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "redis": "x.x",
+    "mysql": "2.x"
+  }
+}

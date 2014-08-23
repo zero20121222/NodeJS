@@ -1,0 +1,172 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '–g', 'node-inspector' ]
+2 info using npm@1.4.7
+3 info using node@v0.10.26
+4 verbose node symlink /usr/local/bin/node
+5 verbose cache add [ '–g', null ]
+6 verbose cache add name=undefined spec="–g" args=["–g",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '–g',
+7 verbose parsed url   path: '–g',
+7 verbose parsed url   href: '–g' }
+8 verbose cache add [ 'node-inspector', null ]
+9 verbose cache add name=undefined spec="node-inspector" args=["node-inspector",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'node-inspector',
+10 verbose parsed url   path: 'node-inspector',
+10 verbose parsed url   href: 'node-inspector' }
+11 silly lockFile 51e00793-g –g
+12 verbose lock –g /Users/MichaelZhao/.npm/51e00793-g.lock
+13 silly lockFile 4198ef9e-node-inspector node-inspector
+14 verbose lock node-inspector /Users/MichaelZhao/.npm/4198ef9e-node-inspector.lock
+15 silly lockFile 51e00793-g –g
+16 silly lockFile 51e00793-g –g
+17 silly lockFile 4198ef9e-node-inspector node-inspector
+18 silly lockFile 4198ef9e-node-inspector node-inspector
+19 verbose addNamed [ '–g', '' ]
+20 verbose addNamed [ null, '*' ]
+21 silly lockFile 72e0e7f9-g –g@
+22 verbose lock –g@ /Users/MichaelZhao/.npm/72e0e7f9-g.lock
+23 verbose addNamed [ 'node-inspector', '' ]
+24 verbose addNamed [ null, '*' ]
+25 silly lockFile e68b88da-node-inspector node-inspector@
+26 verbose lock node-inspector@ /Users/MichaelZhao/.npm/e68b88da-node-inspector.lock
+27 silly addNameRange { name: '–g', range: '*', hasData: false }
+28 verbose url raw –g
+29 verbose url resolving [ 'https://registry.npmjs.org/', './%E2%80%93g' ]
+30 verbose url resolved https://registry.npmjs.org/%E2%80%93g
+31 info trying registry request attempt 1 at 22:57:45
+32 http GET https://registry.npmjs.org/%E2%80%93g
+33 silly addNameRange { name: 'node-inspector', range: '*', hasData: false }
+34 verbose url raw node-inspector
+35 verbose url resolving [ 'https://registry.npmjs.org/', './node-inspector' ]
+36 verbose url resolved https://registry.npmjs.org/node-inspector
+37 info trying registry request attempt 1 at 22:57:45
+38 verbose etag "AMY7H4MIQONHFHR8C12TNT6N1"
+39 http GET https://registry.npmjs.org/node-inspector
+40 http 304 https://registry.npmjs.org/node-inspector
+41 silly registry.get cb [ 304,
+41 silly registry.get   { date: 'Sat, 16 Aug 2014 14:54:10 GMT',
+41 silly registry.get     server: 'Apache',
+41 silly registry.get     via: '1.1 varnish',
+41 silly registry.get     'last-modified': 'Sat, 16 Aug 2014 14:54:11 GMT',
+41 silly registry.get     'cache-control': 'max-age=60',
+41 silly registry.get     etag: '"AMY7H4MIQONHFHR8C12TNT6N1"',
+41 silly registry.get     'x-served-by': 'cache-ty68-TYO',
+41 silly registry.get     'x-cache': 'HIT',
+41 silly registry.get     'x-cache-hits': '1',
+41 silly registry.get     'x-timer': 'S1408200850.768052,VS0,VE806',
+41 silly registry.get     vary: 'Accept',
+41 silly registry.get     'content-length': '0',
+41 silly registry.get     'keep-alive': 'timeout=10, max=50',
+41 silly registry.get     connection: 'Keep-Alive' } ]
+42 verbose etag node-inspector from cache
+43 silly addNameRange number 2 { name: 'node-inspector', range: '*', hasData: true }
+44 silly addNameRange versions [ 'node-inspector',
+44 silly addNameRange   [ '0.0.1',
+44 silly addNameRange     '0.0.2',
+44 silly addNameRange     '0.0.3',
+44 silly addNameRange     '0.0.4',
+44 silly addNameRange     '0.1.0',
+44 silly addNameRange     '0.1.1',
+44 silly addNameRange     '0.1.2',
+44 silly addNameRange     '0.1.3',
+44 silly addNameRange     '0.1.4',
+44 silly addNameRange     '0.1.5',
+44 silly addNameRange     '0.1.6',
+44 silly addNameRange     '0.1.7',
+44 silly addNameRange     '0.1.8',
+44 silly addNameRange     '0.1.9',
+44 silly addNameRange     '0.1.10',
+44 silly addNameRange     '0.3.0',
+44 silly addNameRange     '0.3.1',
+44 silly addNameRange     '0.3.2',
+44 silly addNameRange     '0.3.3',
+44 silly addNameRange     '0.3.4',
+44 silly addNameRange     '0.4.0',
+44 silly addNameRange     '0.5.0',
+44 silly addNameRange     '0.6.0',
+44 silly addNameRange     '0.6.1',
+44 silly addNameRange     '0.6.2',
+44 silly addNameRange     '0.7.0-1',
+44 silly addNameRange     '0.2.0-beta1',
+44 silly addNameRange     '0.2.0-beta2',
+44 silly addNameRange     '0.2.0-beta3',
+44 silly addNameRange     '0.2.0-beta4',
+44 silly addNameRange     '0.3.0-preview1',
+44 silly addNameRange     '0.7.0-2',
+44 silly addNameRange     '0.7.0',
+44 silly addNameRange     '0.7.1',
+44 silly addNameRange     '0.7.2',
+44 silly addNameRange     '0.7.3',
+44 silly addNameRange     '0.7.4' ] ]
+45 verbose addNamed [ 'node-inspector', '0.7.4' ]
+46 verbose addNamed [ '0.7.4', '0.7.4' ]
+47 silly lockFile aae362fc-node-inspector-0-7-4 node-inspector@0.7.4
+48 verbose lock node-inspector@0.7.4 /Users/MichaelZhao/.npm/aae362fc-node-inspector-0-7-4.lock
+49 silly lockFile aae362fc-node-inspector-0-7-4 node-inspector@0.7.4
+50 silly lockFile aae362fc-node-inspector-0-7-4 node-inspector@0.7.4
+51 silly lockFile e68b88da-node-inspector node-inspector@
+52 silly lockFile e68b88da-node-inspector node-inspector@
+53 http 404 https://registry.npmjs.org/%E2%80%93g
+54 verbose headers { date: 'Sat, 16 Aug 2014 14:54:13 GMT',
+54 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+54 verbose headers   'content-type': 'application/json',
+54 verbose headers   'cache-control': 'max-age=0',
+54 verbose headers   'content-length': '52',
+54 verbose headers   'accept-ranges': 'bytes',
+54 verbose headers   via: '1.1 varnish',
+54 verbose headers   age: '0',
+54 verbose headers   'x-served-by': 'cache-ty67-TYO',
+54 verbose headers   'x-cache': 'MISS',
+54 verbose headers   'x-cache-hits': '0',
+54 verbose headers   'x-timer': 'S1408200852.865376,VS0,VE483',
+54 verbose headers   'keep-alive': 'timeout=10, max=50',
+54 verbose headers   connection: 'Keep-Alive' }
+55 silly registry.get cb [ 404,
+55 silly registry.get   { date: 'Sat, 16 Aug 2014 14:54:13 GMT',
+55 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+55 silly registry.get     'content-type': 'application/json',
+55 silly registry.get     'cache-control': 'max-age=0',
+55 silly registry.get     'content-length': '52',
+55 silly registry.get     'accept-ranges': 'bytes',
+55 silly registry.get     via: '1.1 varnish',
+55 silly registry.get     age: '0',
+55 silly registry.get     'x-served-by': 'cache-ty67-TYO',
+55 silly registry.get     'x-cache': 'MISS',
+55 silly registry.get     'x-cache-hits': '0',
+55 silly registry.get     'x-timer': 'S1408200852.865376,VS0,VE483',
+55 silly registry.get     'keep-alive': 'timeout=10, max=50',
+55 silly registry.get     connection: 'Keep-Alive' } ]
+56 silly lockFile 72e0e7f9-g –g@
+57 silly lockFile 72e0e7f9-g –g@
+58 error 404 404 Not Found: %E2%80%93g
+58 error 404
+58 error 404 '%E2%80%93g' is not in the npm registry.
+58 error 404 You should bug the author to publish it
+58 error 404
+58 error 404 Note that you can also install from a
+58 error 404 tarball, folder, or http url, or git url.
+59 error System Darwin 13.1.0
+60 error command "node" "/usr/local/bin/npm" "install" "–g" "node-inspector"
+61 error cwd /Users/MichaelZhao/ScriptSpace/nodeJS/readTest
+62 error node -v v0.10.26
+63 error npm -v 1.4.7
+64 error code E404
+65 verbose exit [ 1, true ]
