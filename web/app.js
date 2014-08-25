@@ -15,6 +15,7 @@ var usesession = require('./routes/usesession');
 var usecookies = require('./routes/usecookies');
 var usecrypto = require('./routes/usecrypto');
 var cleanCookie = require('./routes/clean');
+var uploadFile = require('./routes/upload');
 
 var app = express();
 
@@ -28,6 +29,7 @@ app.use(favicon());
 app.use(logger('dev'));
 
 //通过bodyParse中间件分析application/x-www-form-unlencoded & application/json请求，并把变量保存到req.body
+app.use(bodyParser({uploadDir:'/Users/MichaelZhao/ScriptSpace/nodeJS/UploadFile'}));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 app.use(cookieParser());
@@ -41,6 +43,7 @@ app.use('/usesession' , usesession);
 app.use('/usecookies' , usecookies);
 app.use('/usecrypto' , usecrypto);
 app.use('/clean' , cleanCookie);
+app.use('/fileUpload' , uploadFile);
 
 
 /// catch 404 and forward to error handler
@@ -78,6 +81,7 @@ app.use(function(err, req, res, next) {
 // add listen for web
 app.listen(8000 , function(){
     console.log("Server Start!");
+    console.log('Server config-> env:%s', app.settings.env);
 });
 
 module.exports = app;

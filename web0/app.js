@@ -21,7 +21,7 @@ var app = express();
 // view engine setup
 // _dirname是nodeJS中的全局变量，表示当前执行文件的路径
 app.set('views', path.join(__dirname, 'views'));
-// 设置使用的模版引擎
+// 设置使用的模版引擎 or app.engine('filenName--default:ejs' , require('ejs').remderFile);
 app.set('view engine', 'ejs');
 
 app.use(favicon());
@@ -78,6 +78,7 @@ app.use(function(err, req, res, next) {
 // add listen for web
 app.listen(8000 , function(){
     console.log("Server Start!");
+    console.log('Server config-> \nport:%d\n env:%s', app.address().port, app.settings.env);
 });
 
 module.exports = app;
